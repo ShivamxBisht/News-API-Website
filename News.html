@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News API</title>
+    <link rel="stylesheet" href="News.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Photos/news logo.png">
+</head>
+
+<body>
+    <div class="loading-bar" id="loading-bar"></div>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#">
+                <img onclick="reload()" src="Photos/news logo.png" class="img1">
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li class="hover-link nav-item" id="tech" onclick="onNavItemClick('tech')">Technology</li>
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="Movies" onclick="onNavItemClick('Movies')">Movies</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-text" class="news-input" placeholder="e.g. Hypercars">
+                <button id="btn2" class="btn1">Search</button>
+            </div>
+        </div>
+        <div class="toggle-btn">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle-label">
+                <span class="toggle-ball"></span>
+            </label>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container flex container" id="card-container">
+
+        </div>
+    </main>
+    <template id="news-card">
+        <div class="card">
+            <div class="card-header">
+                <img id="news-img" src="https://via.placeholder.com/400x200" alt="news-image">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 id="news-content">End gadget 02/09/23</h6>
+                <p id="news-desc" class="lo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem porro,
+                    praesentium deleniti minima necessitatibus sint possimus consequuntur quos natus et aperiam modi
+                    recusandae nobis. Vel omnis autem iure dignissimos rerum.</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="News.js" defer></script>
+</body>
+
+</html>
