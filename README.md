@@ -7,3 +7,4 @@
 - loading Animation
 # Preview (Screenshot)
 ![SS](https://github.com/ShivamxBisht/News-API-Website/assets/148674357/09bb50f4-d778-40c1-8043-41c0f0638d3f)
+# Note - It only works on local server as it API requires upgrade version to fetch details globally.
