@@ -1,4 +1,4 @@
-# News API Project
+# 🌍News API Project
 ## Features
 
 - Search & fetch details
